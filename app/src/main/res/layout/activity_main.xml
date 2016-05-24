@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.a4blue.jezze.myappstudio.MainActivity"
+    android:background="@color/material_blue_grey_900">
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Popular Movies"
+        android:id="@+id/movies"
+        android:typeface="sans"
+        android:clickable="true"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:onClick= "popup" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stock Hawk"
+        android:id="@+id/hawk"
+        android:typeface="sans"
+        android:clickable="true"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_below="@+id/movies"
+        android:layout_marginTop="5dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/movies"
+        android:layout_alignStart="@+id/movies"
+        android:layout_alignRight="@+id/movies"
+        android:layout_alignEnd="@+id/movies"
+        android:onClick= "popup"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Build It Bigger"
+        android:id="@+id/bigger"
+        android:typeface="sans"
+        android:clickable="true"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_below="@+id/hawk"
+        android:layout_alignLeft="@+id/hawk"
+        android:layout_alignStart="@+id/hawk"
+        android:layout_marginTop="5dp"
+        android:layout_alignRight="@+id/hawk"
+        android:layout_alignEnd="@+id/hawk"
+        android:onClick= "popup"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make Your App Material"
+        android:id="@+id/material"
+        android:typeface="sans"
+        android:clickable="true"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_below="@+id/bigger"
+        android:layout_alignLeft="@+id/bigger"
+        android:layout_alignStart="@+id/bigger"
+        android:layout_marginTop="5dp"
+        android:layout_alignRight="@+id/bigger"
+        android:layout_alignEnd="@+id/bigger"
+        android:onClick= "popup"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Ubiquitous"
+        android:id="@+id/ubiquitous"
+        android:typeface="sans"
+        android:clickable="true"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_below="@+id/material"
+        android:layout_alignLeft="@+id/material"
+        android:layout_alignStart="@+id/material"
+        android:layout_marginTop="5dp"
+        android:layout_alignRight="@+id/material"
+        android:layout_alignEnd="@+id/material"
+        android:onClick= "popup"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CAPSTONE"
+        android:id="@+id/capstone"
+        android:typeface="sans"
+        android:clickable="true"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_below="@+id/ubiquitous"
+        android:layout_alignLeft="@+id/ubiquitous"
+        android:layout_alignStart="@+id/ubiquitous"
+        android:layout_marginTop="5dp"
+        android:layout_alignRight="@+id/ubiquitous"
+        android:layout_alignEnd="@+id/ubiquitous"
+        android:onClick= "popup"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Jezze&apos;s Nanodegree Apps!"
+        android:id="@+id/title"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:autoText="false"
+        android:textColor="#06bffc"
+        android:textSize="35sp"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/movies"
+        android:layout_alignStart="@+id/movies"
+        android:layout_alignRight="@+id/movies"
+        android:layout_alignEnd="@+id/movies"
+        android:onClick= "title"/>
+</RelativeLayout>
